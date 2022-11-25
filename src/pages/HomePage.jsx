@@ -13,10 +13,8 @@ export default function HomePage() {
             response.then((data) => setTest(data));
         }
     }, [test]);
-  return (
-    <>
-        {test !== null ? test.test : 'Loading...'}
+
+    return (
       <DragDropInput/>
-    </>
-  );
+    );
 }
